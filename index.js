@@ -36,21 +36,29 @@ app.post('/artist/:id', function (req, res) {
   if(err){
     throw err
     console.log(err);
-  } else{
-    Artist.find({}, function (err, tunr) {
-      if(Artist){
-        console.log(Artist+" already exists")
-      } else {
-        var newArtist = new Artist({
-          newArtist.name = req.body.name,
-          newArtist.genre = req.body.genre,
-          newArtist.spotifyURL= req.body.spotifyURL,
-          newArtist.spotifyImage= req.body.spotifyImage
-      })
-    })
   }
+  var newArtist = new Artist({
+    name: req.body.name,
+    genre : req.body.genre,
+    genre : req.body.genre,
+    spotifyURL: req.body.spotifyURL,
+    spotifyImage: req.body.spotifyImage
+  })
+  //else{
+  //   Artist.find({}, function (err, tunr) {
+  //     if(Artist){
+  //       console.log(Artist+" already exists")
+  //     } else {
+  //       var newArtist = new Artist({
+  //         name : req.body.name,
+  //         genre : req.body.genre,
+  //         spotifyURL: req.body.spotifyURL,
+  //         spotifyImage: req.body.spotifyImage
+  //     })
+  //   }
+  // })
   Artist.save()
-  res.render('/artist/:id', tunr)
+  res.render('/artist/:id')
 
 })
 
