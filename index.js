@@ -33,21 +33,21 @@ app.get('/search', function (req, res) {
 
 //TODO: Create a post route for posting / editing / searching for a new artist.
 app.post('/artist/:id', function (req, res) {
-  if(error){
-    throw error
+  if(err){
+    throw err
+    console.log(err);
   } else{
     Artist.find({}, function (err, tunr) {
       if(Artist){
-        console.log(Artist, "already exists")
+        console.log(Artist+" already exists")
       } else {
-        var newArtist = new Artist(){
+        var newArtist = new Artist({
           newArtist.name = req.body.name,
           newArtist.genre = req.body.genre,
           newArtist.spotifyURL= req.body.spotifyURL,
           newArtist.spotifyImage= req.body.spotifyImage
-      }
+      })
     })
-
   }
   Artist.save()
   res.render('/artist/:id', tunr)
