@@ -1,8 +1,10 @@
-body {
-  background: 'yellow';
-}
+
 
 h1 {
   padding-top: 10px;
   font-size: 48px;
+  text-align: center;
+}
+form {
+  text-align: center;
 }

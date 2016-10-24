@@ -8,7 +8,7 @@ The next step will be to install our dependencies into our package.json and setu
 <ul>
 <li>ExpressJs -- to be our middleware for our nodeJS server.</li>
 <li>Express-Handlebars -- to be our template engine to save time typing.</li>
-<li>body-parser -- so that we can parse body into request parameters and use in our models</li>
+<li>body-parser -- so that we can parse document body into request parameters and use in our models</li>
 <li>Mongoose -- to be our adapter and talk to our Mongo DB server.</li>
 </ul>
 

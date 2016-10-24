@@ -1,0 +1,35 @@
+{
+  "name": "tunr",
+  "version": "1.0.0",
+  "description": "The world's #1 music web app! Those Spotify haters can't keep up with us!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHoar/JS-DC-3-Lab02.git"
+  },
+  "keywords": [
+    "tunr",
+    "spotify",
+    "spotify",
+    "API"
+  ],
+  "author": "Sean Hoar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SHoar/JS-DC-3-Lab02/issues"
+  },
+  "homepage": "https://github.com/SHoar/JS-DC-3-Lab02#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap.native": "^1.0.5",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

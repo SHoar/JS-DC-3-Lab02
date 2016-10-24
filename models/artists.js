@@ -7,8 +7,4 @@ var artistSchema = new Schema({
   spotifyURL: String,
   spotifyImage: String
 })
-var Artist = mongoose.model('Artist', artistSchema)
-
-
-
-module.exports = Artist
+var Artist = module.exports = mongoose.model('Artist', artistSchema)
